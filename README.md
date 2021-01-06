@@ -1,2 +1,3 @@
 # yage
-Yet another game engine - 2d
+*Y*et *A*nother *G*ame *E*ngine
+
