@@ -5,5 +5,5 @@ Reference book [Building a 2d Game Physics Engine: Using HTML5 amd JavaScript](h
 I am using vanilla Vim editor instead of the suggested NetBeans IDE.
 
 ## TODO
-- [] Bodies change color when colliding
-- [] Centerline of the circle rotates when the circle itself is rotated
+- [ ] Bodies change color when colliding
+- [ ] Centerline of the circle rotates when the circle itself is rotated
