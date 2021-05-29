@@ -36,6 +36,7 @@ gEngine.Core = (function () {
     // If lag larger then update frames, update until caught up
     while (mLagTime >= kMPF) {
       mLagTime -= kMPF;
+      gEngine.Physics.collision(mContext);
       update();
     }
     updateUIEcho();
@@ -56,7 +57,6 @@ gEngine.Core = (function () {
       "<li><b>WASD</b> + <b>QE</b>: Position [Move + Rotate]</li>" + 
       "</ul><hr>" +
       "<b>F/G</b>: Spawn [Rectangle/Circle] at selected object" +
-      "<p><b>H</b>: Fix object</p>" +
       "<p><b>R</b>: Reset System</p>" +
       "<hr>";
   };

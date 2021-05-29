@@ -2,9 +2,9 @@ var Circle = function (center, radius, fix) {
   RigidShape.call(this, center);
   this.mType = "Circle";
   this.mRadius = radius;
-  this.mFix = fix
   // starting point of the circle
   this.mStartPoint = new Vec2(center.x, center.y - radius);
+  this.mBoundRadius = radius
 };
 
 var prototype = Object.create(RigidShape.prototype);
