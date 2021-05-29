@@ -7,7 +7,8 @@
   </head>
   <body onkeydown="return userControl(event);" 
         onload="var game = new MyGame(); 
-        gEngine.Core.initializeEngineCore()">
+        gEngine.Physics;
+        gEngine.Core.initializeEngineCore();">
     <table style="padding: 2px">
       <tr>
         <td>
@@ -24,7 +25,14 @@
           </div>
         </td>
       </tr>
+      <tr>
+        <td>
+          <div id="test">
+          </div>
+        </td>
+      </tr>
     </table>
+    <script type="text/javascript" src="../js/Physics.js"></script>
     <script type="text/javascript" src="../js/rigidbody/RigidShape.js"></script>
     <script type="text/javascript" src="../js/rigidbody/Rectangle.js"></script>
     <script type="text/javascript" src="../js/rigidbody/Circle.js"></script>
