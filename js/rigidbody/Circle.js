@@ -22,6 +22,7 @@ Circle.prototype.draw = function (context) {
     true);
 
   // draw a line from start point toward center
+  context.moveTo(this.mStartPoint.x, this.mStartPoint.y);
   context.lineTo(this.mCenter.x, this.mCenter.y);
   context.closePath();
   context.stroke();

@@ -31,16 +31,19 @@ gEngine.Core = (function () {
     mPreviousTime = mCurrentTime;
     mLagTime += mElapsedTime;
 
+    // Moving the updateUIEcho() and draw() calls below the while loop makes the 
+    // collision coloring go away. WHY?
+    updateUIEcho();
+    draw();
+
     // Update the game the appropriate number of times
     // Update only every kMPF milliseconds
     // If lag larger then update frames, update until caught up
     while (mLagTime >= kMPF) {
       mLagTime -= kMPF;
-      gEngine.Physics.collision(mContext);
+      gEngine.Physics.collision();
       update();
     }
-    updateUIEcho();
-    draw();
   };
 
   var updateUIEcho = function () {
